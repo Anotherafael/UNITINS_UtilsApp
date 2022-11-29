@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="768" width="414" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Random Photo">
+                                <state key="normal" title="Change Photo">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -56,11 +55,7 @@
         <scene sceneID="7t2-Qd-t8X">
             <objects>
                 <navigationController title="Nav Controller Image" id="Gya-Dk-B7p" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Random Image" id="TNJ-0Z-Nkz">
-                        <imageReference key="image" image="photo" catalog="system" symbolScale="large"/>
-                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <imageReference key="selectedImage" image="photo" catalog="system" symbolScale="large"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Random Image" image="photo" catalog="system" selectedImage="photo" id="TNJ-0Z-Nkz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="6Aj-vb-e1C">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -88,11 +83,11 @@
                                 <rect key="frame" x="0.0" y="821" width="414" height="41"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title=" New Joke">
+                                <state key="normal" title="Generate new Joke">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading joke..." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUb-L7-Xhf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading joke..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUb-L7-Xhf">
                                 <rect key="frame" x="20.5" y="147" width="373" height="136"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="136" id="2TY-lh-Gdm"/>
@@ -102,7 +97,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=":)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJH-Jo-aYa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJH-Jo-aYa">
                                 <rect key="frame" x="20" y="349" width="353" height="52"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -156,7 +151,7 @@
             </objects>
             <point key="canvasLocation" x="-4230" y="-285"/>
         </scene>
-        <!--View Controller-->
+        <!--Utils App-->
         <scene sceneID="f8X-zb-LGx">
             <objects>
                 <viewController id="SaL-2n-tkV" sceneMemberID="viewController">
@@ -164,7 +159,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seja bem-vindo ao aplicativo de inutilidades.  Estas são as aplicações disponíveis: " lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGt-01-5kd">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seja bem-vindo ao aplicativo de inutilidades.  Estas são as aplicações disponíveis: " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGt-01-5kd">
                                 <rect key="frame" x="20.5" y="168" width="373" height="79"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -211,11 +206,25 @@
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="12"/>
-                                <state key="normal" title="Random Taylor Swift Lyrics">
+                                <state key="normal" title="Random Taylor Swift Quote">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="f4P-Qz-RwG" kind="show" id="A3y-8A-LpI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2o-QS-hbT">
+                                <rect key="frame" x="20.5" y="557" width="373" height="48"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="hUa-Em-VZT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Artists">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FBQ-f2-1uZ" kind="show" id="CMx-YR-ef0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -229,17 +238,20 @@
                             <constraint firstItem="8B2-PG-IdF" firstAttribute="centerX" secondItem="V7L-3x-d7n" secondAttribute="centerX" id="C4L-XW-WWk"/>
                             <constraint firstItem="bN2-T6-fJ1" firstAttribute="top" secondItem="8B2-PG-IdF" secondAttribute="bottom" constant="12" id="Ct6-6T-xyB"/>
                             <constraint firstItem="qGt-01-5kd" firstAttribute="top" secondItem="V7L-3x-d7n" secondAttribute="top" constant="80" id="JSy-fp-Ta8"/>
+                            <constraint firstItem="m2o-QS-hbT" firstAttribute="width" secondItem="W2c-Bw-chn" secondAttribute="width" multiplier="0.9" id="KGN-jQ-AOs"/>
                             <constraint firstItem="8B2-PG-IdF" firstAttribute="top" secondItem="qGt-01-5kd" secondAttribute="bottom" constant="70" id="Q5w-JM-jrL"/>
                             <constraint firstItem="P2y-2x-RWk" firstAttribute="top" secondItem="Lpn-6z-Jxh" secondAttribute="bottom" constant="12" id="UFc-Fz-ugm"/>
                             <constraint firstItem="qGt-01-5kd" firstAttribute="centerX" secondItem="V7L-3x-d7n" secondAttribute="centerX" id="cUL-3w-vLe"/>
+                            <constraint firstItem="m2o-QS-hbT" firstAttribute="top" secondItem="P2y-2x-RWk" secondAttribute="bottom" constant="12" id="dFz-wH-uOo"/>
                             <constraint firstItem="Lpn-6z-Jxh" firstAttribute="top" secondItem="bN2-T6-fJ1" secondAttribute="bottom" constant="12" id="dLD-yf-vMw"/>
                             <constraint firstItem="Lpn-6z-Jxh" firstAttribute="width" secondItem="V7L-3x-d7n" secondAttribute="width" multiplier="0.900966" id="fzc-h8-oDT"/>
+                            <constraint firstItem="m2o-QS-hbT" firstAttribute="centerX" secondItem="V7L-3x-d7n" secondAttribute="centerX" id="jUi-AJ-9jg"/>
                             <constraint firstItem="qGt-01-5kd" firstAttribute="width" secondItem="V7L-3x-d7n" secondAttribute="width" multiplier="0.9" id="pb4-Ie-j96"/>
                             <constraint firstItem="P2y-2x-RWk" firstAttribute="width" secondItem="V7L-3x-d7n" secondAttribute="width" multiplier="0.900966" id="twh-tC-LR6"/>
                             <constraint firstItem="8B2-PG-IdF" firstAttribute="width" secondItem="V7L-3x-d7n" secondAttribute="width" multiplier="0.9" id="vaQ-dS-KEa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="MIS-Wt-V2N"/>
+                    <navigationItem key="navigationItem" title="Utils App" id="MIS-Wt-V2N"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3J-W3-EbF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -261,11 +273,11 @@
             </objects>
             <point key="canvasLocation" x="-5429" y="-470"/>
         </scene>
-        <!--Item-->
+        <!--Random Fox-->
         <scene sceneID="DB7-cp-y66">
             <objects>
                 <navigationController id="rTk-H2-nXJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="GCf-UH-wCb"/>
+                    <tabBarItem key="tabBarItem" title="Random Fox" image="tag" catalog="system" selectedImage="tag" id="GCf-UH-wCb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="gj4-lv-nb7">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -293,7 +305,7 @@
                                 <rect key="frame" x="0.0" y="768" width="414" height="45"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Random Photo">
+                                <state key="normal" title="Change Fox">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -323,7 +335,7 @@
             </objects>
             <point key="canvasLocation" x="-2504" y="45"/>
         </scene>
-        <!--Random Advice View Controller-->
+        <!--Random Advice-->
         <scene sceneID="Eea-1i-WgT">
             <objects>
                 <viewController id="xDP-He-3e3" customClass="RandomAdviceViewController" customModule="utils_app" customModuleProvider="target" sceneMemberID="viewController">
@@ -335,11 +347,11 @@
                                 <rect key="frame" x="0.0" y="818" width="414" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Generate new Advice">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgU-0m-9m4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Advice..." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgU-0m-9m4">
                                 <rect key="frame" x="20.5" y="208" width="373" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -357,7 +369,7 @@
                             <constraint firstItem="VCd-J6-f9G" firstAttribute="bottom" secondItem="1F7-cm-Ytu" secondAttribute="bottom" id="t4v-1l-nIz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0Yg-H7-Ini"/>
+                    <navigationItem key="navigationItem" title="Random Advice" id="0Yg-H7-Ini"/>
                     <connections>
                         <outlet property="adviceLabel" destination="kgU-0m-9m4" id="orz-HP-Gyf"/>
                         <outlet property="button" destination="1F7-cm-Ytu" id="7xl-xG-Z6f"/>
@@ -367,7 +379,118 @@
             </objects>
             <point key="canvasLocation" x="-6546.376811594203" y="-285.26785714285711"/>
         </scene>
-        <!--Random Taylor Swift Quote View Controller-->
+        <!--Artists-->
+        <scene sceneID="hYk-b4-RJW">
+            <objects>
+                <viewController id="FBQ-f2-1uZ" customClass="ArtistsViewController" customModule="utils_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yp5-oW-sxd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Uz-32-Wyl">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" systemColor="systemPurpleColor"/>
+                                <color key="sectionIndexTrackingBackgroundColor" systemColor="systemPurpleColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Lwo-HT-yLp" customClass="NumberCell" customModule="utils_app" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lwo-HT-yLp" id="V35-vL-emc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="FBQ-f2-1uZ" id="1O0-xM-clp"/>
+                                    <outlet property="delegate" destination="FBQ-f2-1uZ" id="1uJ-Bz-38n"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pUM-Of-Dxg"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="4Uz-32-Wyl" secondAttribute="bottom" id="6D8-vq-Wwr"/>
+                            <constraint firstItem="4Uz-32-Wyl" firstAttribute="leading" secondItem="pUM-Of-Dxg" secondAttribute="leading" id="Ek4-Gg-UVn"/>
+                            <constraint firstItem="4Uz-32-Wyl" firstAttribute="top" secondItem="pUM-Of-Dxg" secondAttribute="top" id="SEw-DA-7E1"/>
+                            <constraint firstItem="4Uz-32-Wyl" firstAttribute="trailing" secondItem="pUM-Of-Dxg" secondAttribute="trailing" id="pAu-ot-PKo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Artists" id="R5i-j1-vqG"/>
+                    <connections>
+                        <outlet property="tabel" destination="4Uz-32-Wyl" id="XsG-xV-h6r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsJ-5B-ci9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5430" y="1519"/>
+        </scene>
+        <!--Artist Details View Controller-->
+        <scene sceneID="w0s-aU-qfF">
+            <objects>
+                <viewController storyboardIdentifier="ArtistDetails" id="b9Z-e4-Qjp" customClass="ArtistDetailsViewController" customModule="utils_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NRJ-GD-h4y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFk-CK-Du1">
+                                <rect key="frame" x="103.5" y="124" width="207" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84A-3J-OrI">
+                                <rect key="frame" x="62" y="198" width="290" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzc-fA-yQC">
+                                <rect key="frame" x="62" y="237" width="290" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Musics" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxw-RS-vdV">
+                                <rect key="frame" x="62" y="292" width="290" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gMz-fh-Qhb"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="hzc-fA-yQC" firstAttribute="top" secondItem="84A-3J-OrI" secondAttribute="bottom" constant="16" id="0UA-of-cl0"/>
+                            <constraint firstItem="84A-3J-OrI" firstAttribute="centerX" secondItem="gMz-fh-Qhb" secondAttribute="centerX" id="1sW-H3-oJ2"/>
+                            <constraint firstItem="Rxw-RS-vdV" firstAttribute="top" secondItem="hzc-fA-yQC" secondAttribute="bottom" constant="32" id="1vi-af-Qff"/>
+                            <constraint firstItem="LFk-CK-Du1" firstAttribute="width" secondItem="gMz-fh-Qhb" secondAttribute="width" multiplier="0.5" id="3Et-3D-jsL"/>
+                            <constraint firstItem="84A-3J-OrI" firstAttribute="top" secondItem="LFk-CK-Du1" secondAttribute="bottom" constant="45" id="4kc-1m-Shw"/>
+                            <constraint firstItem="hzc-fA-yQC" firstAttribute="centerX" secondItem="gMz-fh-Qhb" secondAttribute="centerX" id="81b-mM-Zaa"/>
+                            <constraint firstItem="LFk-CK-Du1" firstAttribute="centerX" secondItem="gMz-fh-Qhb" secondAttribute="centerX" id="OIu-3d-gwm"/>
+                            <constraint firstItem="84A-3J-OrI" firstAttribute="width" secondItem="gMz-fh-Qhb" secondAttribute="width" multiplier="0.7" id="dlt-Xo-Jrp"/>
+                            <constraint firstItem="hzc-fA-yQC" firstAttribute="width" secondItem="gMz-fh-Qhb" secondAttribute="width" multiplier="0.7" id="gcg-gS-6OK"/>
+                            <constraint firstItem="LFk-CK-Du1" firstAttribute="top" secondItem="gMz-fh-Qhb" secondAttribute="top" constant="80" id="jFq-ek-QJK"/>
+                            <constraint firstItem="Rxw-RS-vdV" firstAttribute="centerX" secondItem="gMz-fh-Qhb" secondAttribute="centerX" id="w1p-Jr-cKg"/>
+                            <constraint firstItem="Rxw-RS-vdV" firstAttribute="width" secondItem="NRJ-GD-h4y" secondAttribute="width" multiplier="0.7" id="wfW-Vv-Ibf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IUb-Ne-lmP"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="84A-3J-OrI" id="fa5-7B-eAu"/>
+                        <outlet property="genderLabel" destination="hzc-fA-yQC" id="Szy-Ed-RFS"/>
+                        <outlet property="musicsLabel" destination="Rxw-RS-vdV" id="dbS-1q-C5p"/>
+                        <outlet property="nameLabel" destination="LFk-CK-Du1" id="XC1-uc-THh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIB-iX-ccw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4523.188405797102" y="1518.75"/>
+        </scene>
+        <!--Taylor Swift Quote-->
         <scene sceneID="b5U-Zl-XR2">
             <objects>
                 <viewController storyboardIdentifier="Random Taylor Swift Lyrics" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f4P-Qz-RwG" customClass="RandomTaylorSwiftQuoteViewController" customModule="utils_app" customModuleProvider="target" sceneMemberID="viewController">
@@ -375,19 +498,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jn5-fg-U2W">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jn5-fg-U2W">
                                 <rect key="frame" x="20.5" y="248" width="373" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjA-pg-oNM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjA-pg-oNM">
                                 <rect key="frame" x="20.5" y="314.5" width="373" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npa-er-2Qs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npa-er-2Qs">
                                 <rect key="frame" x="20.5" y="361" width="373" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -430,7 +553,7 @@
                             <constraint firstItem="Jn5-fg-U2W" firstAttribute="top" secondItem="o3r-Vz-RDi" secondAttribute="top" constant="160" id="zUR-n7-6o0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="t9W-Ka-QuT"/>
+                    <navigationItem key="navigationItem" title="Taylor Swift Quote" id="t9W-Ka-QuT"/>
                     <connections>
                         <outlet property="albumLabel" destination="Npa-er-2Qs" id="zb3-5O-JGa"/>
                         <outlet property="button" destination="JF5-3S-0TU" id="ih4-Px-PlY"/>
@@ -446,6 +569,7 @@
     </scenes>
     <resources>
         <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="tag" catalog="system" width="128" height="119"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
