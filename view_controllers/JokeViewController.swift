@@ -1,6 +1,6 @@
 import UIKit
 
-class RandomJokeViewController: UIViewController {
+class JokeViewController: UIViewController {
     
     @IBOutlet var textJoke: UILabel!
     @IBOutlet var textPunchline: UILabel!

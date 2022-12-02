@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RandomTaylorSwiftQuoteViewController: UIViewController {
+class TSQuoteViewController: UIViewController {
     
     @IBOutlet var textField: UITextField!
     @IBOutlet var quoteLabel: UILabel!

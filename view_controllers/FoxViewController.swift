@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RandomFoxViewController: UIViewController {
+class FoxViewController: UIViewController {
     
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var button: UIButton!

@@ -74,7 +74,7 @@
         <!--Random Joke-->
         <scene sceneID="qtq-ii-2aX">
             <objects>
-                <viewController storyboardIdentifier="RandomJoke" title="Random Joke" id="BAD-Gr-CB7" customClass="RandomJokeViewController" customModule="utils_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RandomJoke" title="Random Joke" id="BAD-Gr-CB7" customClass="JokeViewController" customModule="utils_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IVn-cc-vfl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,7 +296,7 @@
         <!--Random Fox-->
         <scene sceneID="OUc-ld-Qoq">
             <objects>
-                <viewController id="8kC-Nl-D3x" customClass="RandomFoxViewController" customModule="utils_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8kC-Nl-D3x" customClass="FoxViewController" customModule="utils_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xlD-XY-YNg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -338,7 +338,7 @@
         <!--Random Advice-->
         <scene sceneID="Eea-1i-WgT">
             <objects>
-                <viewController id="xDP-He-3e3" customClass="RandomAdviceViewController" customModule="utils_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xDP-He-3e3" customClass="AdviceViewController" customModule="utils_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bso-de-exw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -382,7 +382,7 @@
         <!--Artists-->
         <scene sceneID="hYk-b4-RJW">
             <objects>
-                <viewController id="FBQ-f2-1uZ" customClass="ArtistsViewController" customModule="utils_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FBQ-f2-1uZ" customClass="ArtistsTableViewController" customModule="utils_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yp5-oW-sxd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -421,7 +421,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="R5i-j1-vqG"/>
                     <connections>
-                        <outlet property="tabel" destination="4Uz-32-Wyl" id="XsG-xV-h6r"/>
+                        <outlet property="artistTableRef" destination="4Uz-32-Wyl" id="XsG-xV-h6r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsJ-5B-ci9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -493,7 +493,7 @@
         <!--Taylor Swift Quote-->
         <scene sceneID="b5U-Zl-XR2">
             <objects>
-                <viewController storyboardIdentifier="Random Taylor Swift Lyrics" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f4P-Qz-RwG" customClass="RandomTaylorSwiftQuoteViewController" customModule="utils_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Random Taylor Swift Lyrics" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f4P-Qz-RwG" customClass="TSQuoteViewController" customModule="utils_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="70x-kC-d6Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

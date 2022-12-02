@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RandomAdviceViewController: UIViewController {
+class AdviceViewController: UIViewController {
     
     @IBOutlet var button: UIButton!
     @IBOutlet var adviceLabel: UILabel!
